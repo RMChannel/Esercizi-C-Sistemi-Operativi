@@ -1,0 +1,13 @@
+/*
+Scrivere un programma C che dato un file specificato sulla linea di comando ne conta il numero di linee operando
+ comesegue. Prima crea 8 sottoprocessi. Ognuno di questi provvede ad esaminare una sezione del file input pari 1/8
+ della taglia totale del file. Una volta terminati tutti i figli il processo padre stamperà la somma dei valori restituiti da
+ ciascun figlio. Per restituire i 3 valori si suggerisce di usare una pipe.
+ */
+
+#include <ourhdr.h>
+
+int main(void) {
+	puts("!!!Hello World!!!"); /* prints !!!Hello World!!! */
+	return EXIT_SUCCESS;
+}

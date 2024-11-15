@@ -1,0 +1,31 @@
+/*
+ Scrivere un programma C che sulla riga di comando legge la path di una directory esistente. Il programma creerà
+ un processo che eseguirà il comando di sistema ls nella directory specificata. Il processo padre, catturando l’output
+ prodotto dal comando, aprirà tutti i file presenti nella directory contando il numero di occorrenze del carattere ‘\n’
+ presenti in ciascun file. Al termine il totale verrà stampato sullo standard output
+ */
+
+#include <ourhdr.h>
+
+int main(int argc, char *argv[]) {
+	int fd[2];
+	//Mi creo la pipe
+	if(pipe(fd)<0) err_sys("Pipe andata a puttane\n");
+	pid_t figlio=fork(); //Creo il figlio
+	//Entro nel figlio
+	if(figlio==0) {
+		close(fd[0]); //Chiudo la pipe in lettura
+		//dup2(fd[1],STDOUT_FILENO);
+		execlp("ls","ls","/home/roberto",NULL);
+		exit(0);
+	}
+	//Errore figlio
+	else if(figlio<0) {
+		err_sys("Figlio andato a puttane\n");
+	}
+	//Padre
+	else {
+		close(fd[1]); //Chiudo la pipe in scrittura
+
+	}
+}

@@ -1,0 +1,15 @@
+17:32:36 **** Incremental Build of configuration Debug for project Esercizio_77 ****
+make all 
+Building file: ../src/Esercizio_77.c
+Invoking: GCC C Compiler
+gcc -Iso2016 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Esercizio_77.d" -MT"src/Esercizio_77.o" -o "src/Esercizio_77.o" "../src/Esercizio_77.c"
+Finished building: ../src/Esercizio_77.c
+ 
+Building target: Esercizio_77
+Invoking: GCC C Linker
+gcc  -o "Esercizio_77" ./src/Esercizio_77.o    -lso2016
+Finished building target: Esercizio_77
+ 
+
+17:32:36 Build Finished. 0 errors, 0 warnings. (took 166ms)
+

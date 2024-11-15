@@ -1,0 +1,12 @@
+/*
+ Scrivere un programma C che sulla riga di comando legge la path di una directory esistente. Il programma creerà
+ un processo che eseguirà il comando di sistema ls nella directory specificata. Il processo padre, catturando l’output
+ prodotto dal comando, aprirà tutti i file presenti nella directory contando il numero di occorrenze del carattere ‘\n’
+ presenti in ciascun file. Al termine il totale verrà stampato sullo standard output
+ */
+
+#include <ourhdr.h>
+
+int main(int argc, char *argv[]) {
+	execlp("ls","ls","/home/roberto");
+}
