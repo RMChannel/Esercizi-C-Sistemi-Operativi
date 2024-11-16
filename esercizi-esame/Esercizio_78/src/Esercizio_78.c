@@ -7,25 +7,25 @@ Scrivere un programma C che dato un file specificato sulla linea di comando ne c
 
 #include <ourhdr.h>
 #define N_PROC 8
-#define BUFFER_DIM 100
+#define BUFFER_DIM 1000
 
-void doFiglio(int writePipe,off_t file, off_t mid) {
-	char buffer[BUFFER_DIM];
-	int bytes=0;
-	while(bytes!=-1) {
-		read(file,buffer,BUFFER_DIM);
-		/*
-		if((bytes+BUFFER_DIM)>mid) {
-			if(read(file,buffer,mid)<0) err_sys("Lettura file non andata a buon fine");
-			bytes=-1;
+void doFiglio(int writePipe,off_t file, off_t mid, int i) {
+	char buffer[BUFFER_DIM]="";
+	int lines=0;
+	ssize_t control=read(file,buffer,BUFFER_DIM);
+	if(control<0) err_sys("Read andata a puttane su processo %d\n",i);
+	if(i==(N_PROC-1)) {
+		for(int j=0;buffer[j]!='\0';j++) {
+			if(buffer[j]=='\n') lines++;
 		}
-		else {
-			ssize_t control=read(file,buffer,BUFFER_DIM);
-			if(control<0) err_sys("Lettura file non andata a buon fine");
-			bytes+=control;
-		}*/
-		write(1,buffer,BUFFER_DIM);
 	}
+	else {
+		for(int j=0;j<mid;j++) {
+			if(buffer[j]=='\n') lines++;
+		}
+	}
+	write(writePipe,&lines,sizeof(int));
+	close(writePipe);
 }
 
 int main(int argc, char *argv[]) {
@@ -36,11 +36,12 @@ int main(int argc, char *argv[]) {
 	off_t mid=lseek(file,0,SEEK_END)/8;
 	for(int i=0;i<N_PROC;i++) {
 		pipe(fd[i]);
+		file=open(argv[1],O_RDONLY);
+		for(int j=0;j<i;j++) lseek(file,mid,SEEK_CUR);
 		figlio=fork();
 		if(figlio==0) {
 			close(fd[i][0]); //Chiudo la pipe in lettura dal lato figlio
-			lseek(file,mid,SEEK_CUR);
-			doFiglio(fd[i][1],file,mid); //Richiamo la funzione figlio
+			doFiglio(fd[i][1],file,mid,i); //Richiamo la funzione figlio
 			exit(0);
 		}
 		else if(figlio<0) {
@@ -50,6 +51,19 @@ int main(int argc, char *argv[]) {
 			close(fd[i][1]); //Chiudo la pipe in scrittura dal lato padre
 		}
 	}
-
+	int respond=0, lines=1;
+	while(respond<N_PROC) {
+		for(int i=0;i<N_PROC;i++) {
+			int result;
+			ssize_t control=read(fd[i][0],&result,sizeof(int));
+			if(control>0) {
+				respond++;
+				lines+=result;
+			}
+		}
+	}
+	char result[10];
+	sprintf(result,"%d",lines);
+	write(1,result,strlen(result));
 	return 0;
 }
