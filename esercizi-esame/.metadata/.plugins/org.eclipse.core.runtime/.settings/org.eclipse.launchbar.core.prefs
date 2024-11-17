@@ -1,9 +1,14 @@
 LaunchTargetManager/configs/Esercizio_77=org.eclipse.launchbar.core.launchTargetType.local\:Local
 LaunchTargetManager/configs/Esercizio_78=org.eclipse.launchbar.core.launchTargetType.local\:Local
+LaunchTargetManager/configs/Esercizio_85=org.eclipse.launchbar.core.launchTargetType.local\:Local
 LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/arch=x86_64
 LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/name=Local
 LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/os=linux
-configDescList=org.eclipse.launchbar.core.descriptorType.default\:Esercizio_77,org.eclipse.launchbar.core.descriptorType.default\:Esercizio_78
+configDescList=org.eclipse.launchbar.core.descriptorType.default\:Esercizio_77,org.eclipse.launchbar.core.descriptorType.default\:Esercizio_78,org.eclipse.launchbar.core.descriptorType.default\:Esercizio_84,org.eclipse.launchbar.core.descriptorType.default\:Esercizio_86,org.eclipse.launchbar.core.descriptorType.default\:Esercizio_87,org.eclipse.launchbar.core.descriptorType.default\:Esercizio_88,org.eclipse.launchbar.core.descriptorType.default\:Esercizio_85
 eclipse.preferences.version=1
 org.eclipse.launchbar.core.descriptorType.default\:Esercizio_77/activeLaunchMode=run
 org.eclipse.launchbar.core.descriptorType.default\:Esercizio_77/activeLaunchTarget=org.eclipse.launchbar.core.launchTargetType.local\:Local
+org.eclipse.launchbar.core.descriptorType.default\:Esercizio_78/activeLaunchMode=run
+org.eclipse.launchbar.core.descriptorType.default\:Esercizio_78/activeLaunchTarget=org.eclipse.launchbar.core.launchTargetType.local\:Local
+org.eclipse.launchbar.core.descriptorType.default\:Esercizio_87/activeLaunchMode=run
+org.eclipse.launchbar.core.descriptorType.default\:Esercizio_87/activeLaunchTarget=org.eclipse.launchbar.core.launchTargetType.local\:Local

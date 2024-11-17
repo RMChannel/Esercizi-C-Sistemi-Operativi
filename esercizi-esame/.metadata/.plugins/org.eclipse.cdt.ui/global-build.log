@@ -1,266 +1,39 @@
-18:50:27 **** Build of configuration Debug for project Esercizio_78 ****
+11:02:15 **** Build of configuration Debug for project Esercizio_88 ****
 make all 
-Building file: ../src/Esercizio_78.c
+Building file: ../src/Esercizio_88.c
 Invoking: GCC C Compiler
-gcc -Iso2016 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Esercizio_78.d" -MT"src/Esercizio_78.o" -o "src/Esercizio_78.o" "../src/Esercizio_78.c"
-../src/Esercizio_78.c: In function ‘main’:
-../src/Esercizio_78.c:20:25: warning: passing argument 1 of ‘lseek’ makes integer from pointer without a cast [-Wint-conversion]
-   20 |         off_t max=lseek(fd,0,SEEK_END);
-      |                         ^~
-      |                         |
-      |                         int (*)[2]
-In file included from /usr/local/include/ourhdr.h:9,
-                 from ../src/Esercizio_78.c:8:
-/usr/include/unistd.h:339:27: note: expected ‘int’ but argument is of type ‘int (*)[2]’
-  339 | extern __off_t lseek (int __fd, __off_t __offset, int __whence) __THROW;
-      |                       ~~~~^~~~
-../src/Esercizio_78.c:20:15: warning: unused variable ‘max’ [-Wunused-variable]
-   20 |         off_t max=lseek(fd,0,SEEK_END);
-      |               ^~~
-Finished building: ../src/Esercizio_78.c
+gcc -Iso2016 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Esercizio_88.d" -MT"src/Esercizio_88.o" -o "src/Esercizio_88.o" "../src/Esercizio_88.c"
+Finished building: ../src/Esercizio_88.c
  
-Building target: Esercizio_78
+Building target: Esercizio_88
 Invoking: GCC C Linker
-gcc  -o "Esercizio_78" ./src/Esercizio_78.o    -lso2016
-Finished building target: Esercizio_78
+gcc  -o "Esercizio_88" ./src/Esercizio_88.o    -lso2016
+Finished building target: Esercizio_88
  
-18:50:38 **** Incremental Build of configuration Debug for project Esercizio_78 ****
+11:02:20 **** Incremental Build of configuration Debug for project Esercizio_88 ****
 make all 
-Building file: ../src/Esercizio_78.c
+make: Nessuna operazione da eseguire per «all».
+11:10:26 **** Incremental Build of configuration Debug for project Esercizio_88 ****
+make all 
+Building file: ../src/Esercizio_88.c
 Invoking: GCC C Compiler
-gcc -Iso2016 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Esercizio_78.d" -MT"src/Esercizio_78.o" -o "src/Esercizio_78.o" "../src/Esercizio_78.c"
-../src/Esercizio_78.c: In function ‘main’:
-../src/Esercizio_78.c:20:15: warning: unused variable ‘max’ [-Wunused-variable]
-   20 |         off_t max=lseek(file,0,SEEK_END);
-      |               ^~~
-Finished building: ../src/Esercizio_78.c
+gcc -Iso2016 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Esercizio_88.d" -MT"src/Esercizio_88.o" -o "src/Esercizio_88.o" "../src/Esercizio_88.c"
+Finished building: ../src/Esercizio_88.c
  
-Building target: Esercizio_78
+Building target: Esercizio_88
 Invoking: GCC C Linker
-gcc  -o "Esercizio_78" ./src/Esercizio_78.o    -lso2016
-Finished building target: Esercizio_78
+gcc  -o "Esercizio_88" ./src/Esercizio_88.o    -lso2016
+Finished building target: Esercizio_88
  
-18:50:40 **** Incremental Build of configuration Debug for project Esercizio_78 ****
+11:10:39 **** Build of configuration Debug for project Esercizio_85 ****
 make all 
-make: Nothing to be done for 'all'.
-18:51:03 **** Incremental Build of configuration Debug for project Esercizio_78 ****
-make all 
-make: Nothing to be done for 'all'.
-18:51:53 **** Incremental Build of configuration Debug for project Esercizio_78 ****
-make all 
-make: Nothing to be done for 'all'.
-18:52:04 **** Incremental Build of configuration Debug for project Esercizio_78 ****
-make all 
-Building file: ../src/Esercizio_78.c
+Building file: ../src/Esercizio_85.c
 Invoking: GCC C Compiler
-gcc -Iso2016 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Esercizio_78.d" -MT"src/Esercizio_78.o" -o "src/Esercizio_78.o" "../src/Esercizio_78.c"
-../src/Esercizio_78.c: In function ‘main’:
-../src/Esercizio_78.c:20:15: warning: unused variable ‘max’ [-Wunused-variable]
-   20 |         off_t max=lseek(file,0,SEEK_END)/8;
-      |               ^~~
-Finished building: ../src/Esercizio_78.c
+gcc -Iso2016 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Esercizio_85.d" -MT"src/Esercizio_85.o" -o "src/Esercizio_85.o" "../src/Esercizio_85.c"
+Finished building: ../src/Esercizio_85.c
  
-Building target: Esercizio_78
+Building target: Esercizio_85
 Invoking: GCC C Linker
-gcc  -o "Esercizio_78" ./src/Esercizio_78.o    -lso2016
-Finished building target: Esercizio_78
- 
-18:52:09 **** Incremental Build of configuration Debug for project Esercizio_78 ****
-make all 
-make: Nothing to be done for 'all'.
-18:53:34 **** Incremental Build of configuration Debug for project Esercizio_78 ****
-make all 
-Building file: ../src/Esercizio_78.c
-Invoking: GCC C Compiler
-gcc -Iso2016 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Esercizio_78.d" -MT"src/Esercizio_78.o" -o "src/Esercizio_78.o" "../src/Esercizio_78.c"
-../src/Esercizio_78.c: In function ‘main’:
-../src/Esercizio_78.c:26:30: error: too few arguments to function ‘lseek’
-   26 |                         file=lseek(file,mid);
-      |                              ^~~~~
-In file included from /usr/local/include/ourhdr.h:9,
-                 from ../src/Esercizio_78.c:8:
-/usr/include/unistd.h:339:16: note: declared here
-  339 | extern __off_t lseek (int __fd, __off_t __offset, int __whence) __THROW;
-      |                ^~~~~
-make: *** [src/subdir.mk:20: src/Esercizio_78.o] Error 1
-"make all" terminated with exit code 2. Build might be incomplete.
-18:53:45 **** Incremental Build of configuration Debug for project Esercizio_78 ****
-make all 
-Building file: ../src/Esercizio_78.c
-Invoking: GCC C Compiler
-gcc -Iso2016 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Esercizio_78.d" -MT"src/Esercizio_78.o" -o "src/Esercizio_78.o" "../src/Esercizio_78.c"
-Finished building: ../src/Esercizio_78.c
- 
-Building target: Esercizio_78
-Invoking: GCC C Linker
-gcc  -o "Esercizio_78" ./src/Esercizio_78.o    -lso2016
-Finished building target: Esercizio_78
- 
-18:53:46 **** Incremental Build of configuration Debug for project Esercizio_78 ****
-make all 
-make: Nothing to be done for 'all'.
-19:00:10 **** Incremental Build of configuration Debug for project Esercizio_78 ****
-make all 
-Building file: ../src/Esercizio_78.c
-Invoking: GCC C Compiler
-gcc -Iso2016 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Esercizio_78.d" -MT"src/Esercizio_78.o" -o "src/Esercizio_78.o" "../src/Esercizio_78.c"
-Finished building: ../src/Esercizio_78.c
- 
-Building target: Esercizio_78
-Invoking: GCC C Linker
-gcc  -o "Esercizio_78" ./src/Esercizio_78.o    -lso2016
-Finished building target: Esercizio_78
- 
-19:00:25 **** Incremental Build of configuration Debug for project Esercizio_78 ****
-make all 
-Building file: ../src/Esercizio_78.c
-Invoking: GCC C Compiler
-gcc -Iso2016 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Esercizio_78.d" -MT"src/Esercizio_78.o" -o "src/Esercizio_78.o" "../src/Esercizio_78.c"
-Finished building: ../src/Esercizio_78.c
- 
-Building target: Esercizio_78
-Invoking: GCC C Linker
-gcc  -o "Esercizio_78" ./src/Esercizio_78.o    -lso2016
-Finished building target: Esercizio_78
- 
-19:00:57 **** Incremental Build of configuration Debug for project Esercizio_78 ****
-make all 
-Building file: ../src/Esercizio_78.c
-Invoking: GCC C Compiler
-gcc -Iso2016 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Esercizio_78.d" -MT"src/Esercizio_78.o" -o "src/Esercizio_78.o" "../src/Esercizio_78.c"
-Finished building: ../src/Esercizio_78.c
- 
-Building target: Esercizio_78
-Invoking: GCC C Linker
-gcc  -o "Esercizio_78" ./src/Esercizio_78.o    -lso2016
-Finished building target: Esercizio_78
- 
-19:01:30 **** Incremental Build of configuration Debug for project Esercizio_78 ****
-make all 
-Building file: ../src/Esercizio_78.c
-Invoking: GCC C Compiler
-gcc -Iso2016 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Esercizio_78.d" -MT"src/Esercizio_78.o" -o "src/Esercizio_78.o" "../src/Esercizio_78.c"
-Finished building: ../src/Esercizio_78.c
- 
-Building target: Esercizio_78
-Invoking: GCC C Linker
-gcc  -o "Esercizio_78" ./src/Esercizio_78.o    -lso2016
-Finished building target: Esercizio_78
- 
-19:01:44 **** Incremental Build of configuration Debug for project Esercizio_78 ****
-make all 
-Building file: ../src/Esercizio_78.c
-Invoking: GCC C Compiler
-gcc -Iso2016 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Esercizio_78.d" -MT"src/Esercizio_78.o" -o "src/Esercizio_78.o" "../src/Esercizio_78.c"
-Finished building: ../src/Esercizio_78.c
- 
-Building target: Esercizio_78
-Invoking: GCC C Linker
-gcc  -o "Esercizio_78" ./src/Esercizio_78.o    -lso2016
-Finished building target: Esercizio_78
- 
-19:02:14 **** Incremental Build of configuration Debug for project Esercizio_78 ****
-make all 
-Building file: ../src/Esercizio_78.c
-Invoking: GCC C Compiler
-gcc -Iso2016 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Esercizio_78.d" -MT"src/Esercizio_78.o" -o "src/Esercizio_78.o" "../src/Esercizio_78.c"
-Finished building: ../src/Esercizio_78.c
- 
-Building target: Esercizio_78
-Invoking: GCC C Linker
-gcc  -o "Esercizio_78" ./src/Esercizio_78.o    -lso2016
-Finished building target: Esercizio_78
- 
-19:02:58 **** Incremental Build of configuration Debug for project Esercizio_78 ****
-make all 
-Building file: ../src/Esercizio_78.c
-Invoking: GCC C Compiler
-gcc -Iso2016 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Esercizio_78.d" -MT"src/Esercizio_78.o" -o "src/Esercizio_78.o" "../src/Esercizio_78.c"
-Finished building: ../src/Esercizio_78.c
- 
-Building target: Esercizio_78
-Invoking: GCC C Linker
-gcc  -o "Esercizio_78" ./src/Esercizio_78.o    -lso2016
-Finished building target: Esercizio_78
- 
-19:02:58 **** Incremental Build of configuration Debug for project Esercizio_78 ****
-make all 
-make: Nothing to be done for 'all'.
-19:03:58 **** Incremental Build of configuration Debug for project Esercizio_78 ****
-make all 
-Building file: ../src/Esercizio_78.c
-Invoking: GCC C Compiler
-gcc -Iso2016 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Esercizio_78.d" -MT"src/Esercizio_78.o" -o "src/Esercizio_78.o" "../src/Esercizio_78.c"
-Finished building: ../src/Esercizio_78.c
- 
-Building target: Esercizio_78
-Invoking: GCC C Linker
-gcc  -o "Esercizio_78" ./src/Esercizio_78.o    -lso2016
-Finished building target: Esercizio_78
- 
-19:05:59 **** Incremental Build of configuration Debug for project Esercizio_78 ****
-make all 
-Building file: ../src/Esercizio_78.c
-Invoking: GCC C Compiler
-gcc -Iso2016 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Esercizio_78.d" -MT"src/Esercizio_78.o" -o "src/Esercizio_78.o" "../src/Esercizio_78.c"
-Finished building: ../src/Esercizio_78.c
- 
-Building target: Esercizio_78
-Invoking: GCC C Linker
-gcc  -o "Esercizio_78" ./src/Esercizio_78.o    -lso2016
-Finished building target: Esercizio_78
- 
-19:06:06 **** Incremental Build of configuration Debug for project Esercizio_78 ****
-make all 
-make: Nothing to be done for 'all'.
-19:06:07 **** Incremental Build of configuration Debug for project Esercizio_78 ****
-make all 
-make: Nothing to be done for 'all'.
-19:07:08 **** Incremental Build of configuration Debug for project Esercizio_78 ****
-make all 
-Building file: ../src/Esercizio_78.c
-Invoking: GCC C Compiler
-gcc -Iso2016 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Esercizio_78.d" -MT"src/Esercizio_78.o" -o "src/Esercizio_78.o" "../src/Esercizio_78.c"
-Finished building: ../src/Esercizio_78.c
- 
-Building target: Esercizio_78
-Invoking: GCC C Linker
-gcc  -o "Esercizio_78" ./src/Esercizio_78.o    -lso2016
-Finished building target: Esercizio_78
- 
-19:07:45 **** Incremental Build of configuration Debug for project Esercizio_78 ****
-make all 
-Building file: ../src/Esercizio_78.c
-Invoking: GCC C Compiler
-gcc -Iso2016 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Esercizio_78.d" -MT"src/Esercizio_78.o" -o "src/Esercizio_78.o" "../src/Esercizio_78.c"
-Finished building: ../src/Esercizio_78.c
- 
-Building target: Esercizio_78
-Invoking: GCC C Linker
-gcc  -o "Esercizio_78" ./src/Esercizio_78.o    -lso2016
-Finished building target: Esercizio_78
- 
-19:08:10 **** Incremental Build of configuration Debug for project Esercizio_78 ****
-make all 
-Building file: ../src/Esercizio_78.c
-Invoking: GCC C Compiler
-gcc -Iso2016 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Esercizio_78.d" -MT"src/Esercizio_78.o" -o "src/Esercizio_78.o" "../src/Esercizio_78.c"
-Finished building: ../src/Esercizio_78.c
- 
-Building target: Esercizio_78
-Invoking: GCC C Linker
-gcc  -o "Esercizio_78" ./src/Esercizio_78.o    -lso2016
-Finished building target: Esercizio_78
- 
-19:08:22 **** Incremental Build of configuration Debug for project Esercizio_78 ****
-make all 
-Building file: ../src/Esercizio_78.c
-Invoking: GCC C Compiler
-gcc -Iso2016 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Esercizio_78.d" -MT"src/Esercizio_78.o" -o "src/Esercizio_78.o" "../src/Esercizio_78.c"
-Finished building: ../src/Esercizio_78.c
- 
-Building target: Esercizio_78
-Invoking: GCC C Linker
-gcc  -o "Esercizio_78" ./src/Esercizio_78.o    -lso2016
-Finished building target: Esercizio_78
+gcc  -o "Esercizio_85" ./src/Esercizio_85.o    -lso2016
+Finished building target: Esercizio_85
  
