@@ -5,8 +5,22 @@ ed il proprio pid. Dopo termina
  */
 
 #include <ourhdr.h>
+#define N 15
 
 int main(void) {
-	puts("!!!Hello World!!!"); /* prints !!!Hello World!!! */
-	return EXIT_SUCCESS;
+	int padre=getpid();
+	for(int i=0;i<N;i++) {
+		pid_t figlio=fork();
+		if(figlio<0) err_sys("Figlio %d andato a puttane",i+1);
+		else if(figlio==0) {
+			int pidFiglio=getpid();
+			sleep(i);
+			char result[50];
+			sprintf(result,"Padre: %d Figlio: %d\n",padre,pidFiglio);
+			write(1,result,strlen(result));
+			exit(0);
+		}
+	}
+	wait();
+	return 0;
 }

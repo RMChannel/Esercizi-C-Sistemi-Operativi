@@ -1,0 +1,6 @@
+roberto
+Temp
+eclipse-workspace
+esercizi-esame
+libos2018.zip:Zone.Identifier
+snap

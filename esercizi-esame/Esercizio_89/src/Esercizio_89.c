@@ -1,7 +1,7 @@
 /*
-Scrivere un programma C che crea N sotto processi in modo che il main crea il primo figlio ed ogni figlio creerà un
-sotto processo. Ogni processo dopo l’avvio aspetta un numero di secondi pari alla sua posizione nella lista e stampa
-il pid del padre, ed il proprio pid. Dopo termina
+ Scrivere un programma C che crea n sotto processi, in modo che l’albero dei processi risulti un albero binario com
+pleto (ogni processo genera 2 processi figli). Ogni processo dopo l’avvio, aspetta un numero di secondi pari alla sua
+ posizione nella lista e stampa il Pid del padre, ed il proprio Pid. Dopo termina
  */
 
 #include <ourhdr.h>
