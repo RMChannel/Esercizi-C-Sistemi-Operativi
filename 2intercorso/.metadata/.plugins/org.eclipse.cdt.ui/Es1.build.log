@@ -1,0 +1,15 @@
+13:08:53 **** Incremental Build of configuration Debug for project Es1 ****
+make all 
+Building file: ../src/Es1.c
+Invoking: GCC C Compiler
+gcc -Iso2016 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Es1.d" -MT"src/Es1.o" -o "src/Es1.o" "../src/Es1.c"
+Finished building: ../src/Es1.c
+ 
+Building target: Es1
+Invoking: GCC C Linker
+gcc  -o "Es1" ./src/Es1.o    -lso2016
+Finished building target: Es1
+ 
+
+13:08:53 Build Finished. 0 errors, 0 warnings. (took 117ms)
+

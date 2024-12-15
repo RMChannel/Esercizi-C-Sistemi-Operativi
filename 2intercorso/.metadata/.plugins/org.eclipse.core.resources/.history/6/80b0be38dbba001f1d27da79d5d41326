@@ -1,0 +1,18 @@
+/*
+ ============================================================================
+ Name        : Es1.c
+ Author      : 
+ Version     :
+ Copyright   : Your copyright notice
+ Description : Hello World in C, Ansi-style
+ ============================================================================
+ */
+
+#include <ourhdr.h>
+#include <dirent.h>
+
+int main(int argc, char *argv[]) {
+	if(argc!=2) err_sys("Uso corretto: ./es1 <path>");
+	DIR *dir;
+
+}

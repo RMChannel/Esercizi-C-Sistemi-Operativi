@@ -1,0 +1,10 @@
+LaunchTargetManager/configs/Es1=org.eclipse.launchbar.core.launchTargetType.local\:Local
+LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/arch=x86_64
+LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/name=Local
+LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/os=linux
+configDescList=org.eclipse.launchbar.core.descriptorType.default\:Es1,org.eclipse.launchbar.core.descriptorType.default\:Es2
+eclipse.preferences.version=1
+org.eclipse.launchbar.core.descriptorType.default\:Es1/activeLaunchMode=run
+org.eclipse.launchbar.core.descriptorType.default\:Es1/activeLaunchTarget=org.eclipse.launchbar.core.launchTargetType.local\:Local
+org.eclipse.launchbar.core.descriptorType.default\:Es2/activeLaunchMode=run
+org.eclipse.launchbar.core.descriptorType.default\:Es2/activeLaunchTarget=org.eclipse.launchbar.core.launchTargetType.local\:Local

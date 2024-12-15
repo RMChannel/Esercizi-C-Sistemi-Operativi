@@ -1,0 +1,26 @@
+!SESSION 2024-12-15 12:45:47.485 -----------------------------------------------
+eclipse.buildId=4.33.0.20240905-0613
+java.version=21.0.5
+java.vendor=Ubuntu
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=it_IT
+Framework arguments:  -product org.eclipse.epp.package.cpp.product
+Command-line arguments:  -os linux -ws gtk -arch x86_64 -product org.eclipse.epp.package.cpp.product -data /home/rc82/2intercorso
+
+!ENTRY org.eclipse.cdt.core 1 0 2024-12-15 12:46:06.943
+!MESSAGE Indexed 'Es1' (1 sources, 0 headers) in 0,197 sec: 2 declarations; 1 references; 2 unresolved inclusions; 0 syntax errors; 1 unresolved names (25%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2024-12-15 13:42:35.879
+!MESSAGE Indexed 'Es2' (1 sources, 57 headers) in 0,063 sec: 1.016 declarations; 2.179 references; 0 unresolved inclusions; 0 syntax errors; 0 unresolved names (0%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2024-12-15 13:42:48.882
+!MESSAGE Indexed 'Es2' (1 sources, 57 headers) in 0,051 sec: 1.016 declarations; 2.179 references; 0 unresolved inclusions; 0 syntax errors; 0 unresolved names (0%)
+!SESSION 2024-12-15 13:52:58.715 -----------------------------------------------
+eclipse.buildId=4.33.0.20240905-0613
+java.version=21.0.5
+java.vendor=Ubuntu
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=it_IT
+Framework arguments:  -product org.eclipse.epp.package.cpp.product
+Command-line arguments:  -os linux -ws gtk -arch x86_64 -product org.eclipse.epp.package.cpp.product
+
+!ENTRY org.eclipse.core.resources 2 10035 2024-12-15 13:53:03.142
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.

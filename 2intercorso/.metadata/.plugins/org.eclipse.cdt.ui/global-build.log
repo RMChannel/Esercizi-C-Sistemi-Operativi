@@ -1,0 +1,15 @@
+13:43:02 **** Build of configuration Debug for project Es2 ****
+make all 
+Building file: ../src/Es2.c
+Invoking: GCC C Compiler
+gcc -Iso2016 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Es2.d" -MT"src/Es2.o" -o "src/Es2.o" "../src/Es2.c"
+Finished building: ../src/Es2.c
+ 
+Building target: Es2
+Invoking: GCC C Linker
+gcc  -o "Es2" ./src/Es2.o    -lso2016
+Finished building target: Es2
+ 
+13:43:07 **** Incremental Build of configuration Debug for project Es2 ****
+make all 
+make: Nessuna operazione da eseguire per «all».
