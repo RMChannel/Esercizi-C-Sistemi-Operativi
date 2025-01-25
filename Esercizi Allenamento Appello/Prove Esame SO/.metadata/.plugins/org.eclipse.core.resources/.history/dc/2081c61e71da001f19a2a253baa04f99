@@ -1,0 +1,48 @@
+/*
+ ============================================================================
+ Name        : P1.c
+ Author      : 
+ Version     :
+ Copyright   : Your copyright notice
+ Description : Hello World in C, Ansi-style
+ ============================================================================
+ */
+
+#include <ourhdr.h>
+#include <signal.h>
+#include <sys/wait.h>
+
+int cnt=0;
+
+void figlio() {
+	char stampa[50]="";
+	while(cnt<10) {
+		pause();
+		sprintf(stampa,"PID: %d cnt: %d\n",getpid(),cnt);
+		write(1,stampa,strlen(stampa));
+	}
+}
+
+void segnale() {
+	cnt++;
+}
+
+int main(void) {
+	signal(SIGUSR1,segnale);
+	int P[10];
+	for(int i=0;i<10;i++) {
+		P[i]=fork();
+		if(P[i]<0) err_sys("Figlio %d andato a puttane",i);
+		else if(P[i]==0) {
+			figlio();
+			exit(0);
+		}
+	}
+	srand(time(NULL));
+	int i, status;
+	while(1) {
+		i=rand()%10;
+		usleep(50);
+		if(waitpid(P[i],&status,))
+	}
+}

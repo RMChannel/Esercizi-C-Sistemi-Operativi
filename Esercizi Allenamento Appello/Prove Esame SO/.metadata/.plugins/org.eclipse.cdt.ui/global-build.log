@@ -1,0 +1,329 @@
+17:19:07 **** Build of configuration Debug for project P1 ****
+make all 
+Building file: ../src/P1.c
+Invoking: GCC C Compiler
+gcc -Iso2016 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/P1.d" -MT"src/P1.o" -o "src/P1.o" "../src/P1.c"
+Finished building: ../src/P1.c
+ 
+Building target: P1
+Invoking: GCC C Linker
+gcc -Lso2016 -o "P1" ./src/P1.o    -lso2016
+Finished building target: P1
+ 
+17:19:13 **** Incremental Build of configuration Debug for project P1 ****
+make all 
+make: Nessuna operazione da eseguire per «all».
+17:26:49 **** Incremental Build of configuration Debug for project P1 ****
+make all 
+Building file: ../src/P1.c
+Invoking: GCC C Compiler
+gcc -Iso2016 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/P1.d" -MT"src/P1.o" -o "src/P1.o" "../src/P1.c"
+../src/P1.c: In function ‘main’:
+../src/P1.c:29:9: error: implicit declaration of function ‘signal’; did you mean ‘segnale’? [-Wimplicit-function-declaration]
+   29 |         signal(SIGUSR1,segnale);
+      |         ^~~~~~
+      |         segnale
+../src/P1.c:29:16: error: ‘SIGUSR1’ undeclared (first use in this function)
+   29 |         signal(SIGUSR1,segnale);
+      |                ^~~~~~~
+../src/P1.c:29:16: note: each undeclared identifier is reported only once for each function it appears in
+make: *** [src/subdir.mk:20: src/P1.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+17:27:26 **** Incremental Build of configuration Debug for project P1 ****
+make all 
+Building file: ../src/P1.c
+Invoking: GCC C Compiler
+gcc -Iso2016 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/P1.d" -MT"src/P1.o" -o "src/P1.o" "../src/P1.c"
+Finished building: ../src/P1.c
+ 
+Building target: P1
+Invoking: GCC C Linker
+gcc -Lso2016 -o "P1" ./src/P1.o    -lso2016
+Finished building target: P1
+ 
+17:28:16 **** Incremental Build of configuration Debug for project P1 ****
+make all 
+Building file: ../src/P1.c
+Invoking: GCC C Compiler
+gcc -Iso2016 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/P1.d" -MT"src/P1.o" -o "src/P1.o" "../src/P1.c"
+../src/P1.c: In function ‘main’:
+../src/P1.c:32:13: warning: variable ‘P’ set but not used [-Wunused-but-set-variable]
+   32 |         int P[10];
+      |             ^
+Finished building: ../src/P1.c
+ 
+Building target: P1
+Invoking: GCC C Linker
+gcc -Lso2016 -o "P1" ./src/P1.o    -lso2016
+Finished building target: P1
+ 
+17:28:20 **** Incremental Build of configuration Debug for project P1 ****
+make all 
+make: Nessuna operazione da eseguire per «all».
+17:35:51 **** Build of configuration Debug for project P1 ****
+make all 
+Building file: ../src/P1.c
+Invoking: GCC C Compiler
+gcc -Iso2016 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/P1.d" -MT"src/P1.o" -o "src/P1.o" "../src/P1.c"
+Finished building: ../src/P1.c
+ 
+Building target: P1
+Invoking: GCC C Linker
+gcc -Lso2016 -o "P1" ./src/P1.o    -lso2016
+Finished building target: P1
+ 
+17:35:52 **** Incremental Build of configuration Debug for project P1 ****
+make all 
+make: Nessuna operazione da eseguire per «all».
+17:36:23 **** Incremental Build of configuration Debug for project P1 ****
+make all 
+Building file: ../src/P1.c
+Invoking: GCC C Compiler
+gcc -Iso2016 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/P1.d" -MT"src/P1.o" -o "src/P1.o" "../src/P1.c"
+Finished building: ../src/P1.c
+ 
+Building target: P1
+Invoking: GCC C Linker
+gcc -Lso2016 -o "P1" ./src/P1.o    -lso2016
+Finished building target: P1
+ 
+17:36:25 **** Incremental Build of configuration Debug for project P1 ****
+make all 
+make: Nessuna operazione da eseguire per «all».
+17:37:42 **** Incremental Build of configuration Debug for project P1 ****
+make all 
+Building file: ../src/P1.c
+Invoking: GCC C Compiler
+gcc -Iso2016 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/P1.d" -MT"src/P1.o" -o "src/P1.o" "../src/P1.c"
+../src/P1.c: In function ‘main’:
+../src/P1.c:52:25: warning: ‘write’ reading 100 bytes from a region of size 28 [-Wstringop-overread]
+   52 |                         write(1,"Uno dei figli ha terminato\n",100);
+      |                         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /usr/local/include/ourhdr.h:9,
+                 from ../src/P1.c:11:
+/usr/include/unistd.h:378:16: note: in a call to function ‘write’ declared with attribute ‘access (read_only, 2, 3)’
+  378 | extern ssize_t write (int __fd, const void *__buf, size_t __n) __wur
+      |                ^~~~~
+Finished building: ../src/P1.c
+ 
+Building target: P1
+Invoking: GCC C Linker
+gcc -Lso2016 -o "P1" ./src/P1.o    -lso2016
+Finished building target: P1
+ 
+17:37:48 **** Incremental Build of configuration Debug for project P1 ****
+make all 
+Building file: ../src/P1.c
+Invoking: GCC C Compiler
+gcc -Iso2016 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/P1.d" -MT"src/P1.o" -o "src/P1.o" "../src/P1.c"
+Finished building: ../src/P1.c
+ 
+Building target: P1
+Invoking: GCC C Linker
+gcc -Lso2016 -o "P1" ./src/P1.o    -lso2016
+Finished building target: P1
+ 
+17:37:49 **** Incremental Build of configuration Debug for project P1 ****
+make all 
+make: Nessuna operazione da eseguire per «all».
+17:38:13 **** Incremental Build of configuration Debug for project P1 ****
+make all 
+Building file: ../src/P1.c
+Invoking: GCC C Compiler
+gcc -Iso2016 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/P1.d" -MT"src/P1.o" -o "src/P1.o" "../src/P1.c"
+../src/P1.c: In function ‘main’:
+../src/P1.c:56:17: warning: ‘write’ reading 30 bytes from a region of size 22 [-Wstringop-overread]
+   56 |                 write(1,"Uccisi tutti i figli\n",30);
+      |                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /usr/local/include/ourhdr.h:9,
+                 from ../src/P1.c:11:
+/usr/include/unistd.h:378:16: note: in a call to function ‘write’ declared with attribute ‘access (read_only, 2, 3)’
+  378 | extern ssize_t write (int __fd, const void *__buf, size_t __n) __wur
+      |                ^~~~~
+Finished building: ../src/P1.c
+ 
+Building target: P1
+Invoking: GCC C Linker
+gcc -Lso2016 -o "P1" ./src/P1.o    -lso2016
+Finished building target: P1
+ 
+17:38:27 **** Incremental Build of configuration Debug for project P1 ****
+make all 
+Building file: ../src/P1.c
+Invoking: GCC C Compiler
+gcc -Iso2016 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/P1.d" -MT"src/P1.o" -o "src/P1.o" "../src/P1.c"
+Finished building: ../src/P1.c
+ 
+Building target: P1
+Invoking: GCC C Linker
+gcc -Lso2016 -o "P1" ./src/P1.o    -lso2016
+Finished building target: P1
+ 
+17:38:28 **** Incremental Build of configuration Debug for project P1 ****
+make all 
+make: Nessuna operazione da eseguire per «all».
+17:38:37 **** Incremental Build of configuration Debug for project P1 ****
+make all 
+Building file: ../src/P1.c
+Invoking: GCC C Compiler
+gcc -Iso2016 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/P1.d" -MT"src/P1.o" -o "src/P1.o" "../src/P1.c"
+Finished building: ../src/P1.c
+ 
+Building target: P1
+Invoking: GCC C Linker
+gcc -Lso2016 -o "P1" ./src/P1.o    -lso2016
+Finished building target: P1
+ 
+17:38:43 **** Incremental Build of configuration Debug for project P1 ****
+make all 
+make: Nessuna operazione da eseguire per «all».
+17:38:55 **** Incremental Build of configuration Debug for project P1 ****
+make all 
+make: Nessuna operazione da eseguire per «all».
+17:39:02 **** Incremental Build of configuration Debug for project P1 ****
+make all 
+Building file: ../src/P1.c
+Invoking: GCC C Compiler
+gcc -Iso2016 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/P1.d" -MT"src/P1.o" -o "src/P1.o" "../src/P1.c"
+Finished building: ../src/P1.c
+ 
+Building target: P1
+Invoking: GCC C Linker
+gcc -Lso2016 -o "P1" ./src/P1.o    -lso2016
+Finished building target: P1
+ 
+17:39:06 **** Incremental Build of configuration Debug for project P1 ****
+make all 
+Building file: ../src/P1.c
+Invoking: GCC C Compiler
+gcc -Iso2016 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/P1.d" -MT"src/P1.o" -o "src/P1.o" "../src/P1.c"
+Finished building: ../src/P1.c
+ 
+Building target: P1
+Invoking: GCC C Linker
+gcc -Lso2016 -o "P1" ./src/P1.o    -lso2016
+Finished building target: P1
+ 
+17:39:18 **** Incremental Build of configuration Debug for project P1 ****
+make all 
+Building file: ../src/P1.c
+Invoking: GCC C Compiler
+gcc -Iso2016 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/P1.d" -MT"src/P1.o" -o "src/P1.o" "../src/P1.c"
+Finished building: ../src/P1.c
+ 
+Building target: P1
+Invoking: GCC C Linker
+gcc -Lso2016 -o "P1" ./src/P1.o    -lso2016
+Finished building target: P1
+ 
+17:39:31 **** Incremental Build of configuration Debug for project P1 ****
+make all 
+Building file: ../src/P1.c
+Invoking: GCC C Compiler
+gcc -Iso2016 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/P1.d" -MT"src/P1.o" -o "src/P1.o" "../src/P1.c"
+Finished building: ../src/P1.c
+ 
+Building target: P1
+Invoking: GCC C Linker
+gcc -Lso2016 -o "P1" ./src/P1.o    -lso2016
+Finished building target: P1
+ 
+17:39:37 **** Incremental Build of configuration Debug for project P1 ****
+make all 
+Building file: ../src/P1.c
+Invoking: GCC C Compiler
+gcc -Iso2016 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/P1.d" -MT"src/P1.o" -o "src/P1.o" "../src/P1.c"
+Finished building: ../src/P1.c
+ 
+Building target: P1
+Invoking: GCC C Linker
+gcc -Lso2016 -o "P1" ./src/P1.o    -lso2016
+Finished building target: P1
+ 
+17:39:42 **** Incremental Build of configuration Debug for project P1 ****
+make all 
+Building file: ../src/P1.c
+Invoking: GCC C Compiler
+gcc -Iso2016 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/P1.d" -MT"src/P1.o" -o "src/P1.o" "../src/P1.c"
+Finished building: ../src/P1.c
+ 
+Building target: P1
+Invoking: GCC C Linker
+gcc -Lso2016 -o "P1" ./src/P1.o    -lso2016
+Finished building target: P1
+ 
+17:40:02 **** Incremental Build of configuration Debug for project P1 ****
+make all 
+Building file: ../src/P1.c
+Invoking: GCC C Compiler
+gcc -Iso2016 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/P1.d" -MT"src/P1.o" -o "src/P1.o" "../src/P1.c"
+Finished building: ../src/P1.c
+ 
+Building target: P1
+Invoking: GCC C Linker
+gcc -Lso2016 -o "P1" ./src/P1.o    -lso2016
+Finished building target: P1
+ 
+17:41:25 **** Incremental Build of configuration Debug for project P1 ****
+make all 
+make: Nessuna operazione da eseguire per «all».
+17:41:35 **** Incremental Build of configuration Debug for project P1 ****
+make all 
+Building file: ../src/P1.c
+Invoking: GCC C Compiler
+gcc -Iso2016 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/P1.d" -MT"src/P1.o" -o "src/P1.o" "../src/P1.c"
+Finished building: ../src/P1.c
+ 
+Building target: P1
+Invoking: GCC C Linker
+gcc -Lso2016 -o "P1" ./src/P1.o    -lso2016
+Finished building target: P1
+ 
+17:41:51 **** Incremental Build of configuration Debug for project P1 ****
+make all 
+Building file: ../src/P1.c
+Invoking: GCC C Compiler
+gcc -Iso2016 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/P1.d" -MT"src/P1.o" -o "src/P1.o" "../src/P1.c"
+Finished building: ../src/P1.c
+ 
+Building target: P1
+Invoking: GCC C Linker
+gcc -Lso2016 -o "P1" ./src/P1.o    -lso2016
+Finished building target: P1
+ 
+17:41:56 **** Incremental Build of configuration Debug for project P1 ****
+make all 
+Building file: ../src/P1.c
+Invoking: GCC C Compiler
+gcc -Iso2016 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/P1.d" -MT"src/P1.o" -o "src/P1.o" "../src/P1.c"
+Finished building: ../src/P1.c
+ 
+Building target: P1
+Invoking: GCC C Linker
+gcc -Lso2016 -o "P1" ./src/P1.o    -lso2016
+Finished building target: P1
+ 
+17:42:37 **** Incremental Build of configuration Debug for project P1 ****
+make all 
+Building file: ../src/P1.c
+Invoking: GCC C Compiler
+gcc -Iso2016 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/P1.d" -MT"src/P1.o" -o "src/P1.o" "../src/P1.c"
+Finished building: ../src/P1.c
+ 
+Building target: P1
+Invoking: GCC C Linker
+gcc -Lso2016 -o "P1" ./src/P1.o    -lso2016
+Finished building target: P1
+ 
+17:42:48 **** Incremental Build of configuration Debug for project P1 ****
+make all 
+Building file: ../src/P1.c
+Invoking: GCC C Compiler
+gcc -Iso2016 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/P1.d" -MT"src/P1.o" -o "src/P1.o" "../src/P1.c"
+Finished building: ../src/P1.c
+ 
+Building target: P1
+Invoking: GCC C Linker
+gcc -Lso2016 -o "P1" ./src/P1.o    -lso2016
+Finished building target: P1
+ 
